@@ -32,7 +32,7 @@ public class MandelbrotApplication {
                     double x_new = x*x-y*y+c_re;
                     y = 2*x*y+c_im;
                     x = x_new;
-                    iteration++;
+                    iteration ++;
                 }
                 if (iteration < max) image.setRGB(col, row, colors[iteration]);
                 else image.setRGB(col, row, black);
