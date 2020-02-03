@@ -27,7 +27,7 @@ public class MandelbrotApplication {
                 double c_re = ((col * 4.0) / width) - ((width >> 1) * 4.0 / width);
                 double c_im = ((row * 4.0) / width) - (((height >> 1) * 4.0) / width);
                 double x = 0, y = 0;
-                int iteration = 0;
+                int iteration  = 0;
                 while (x*x+y*y < 4 && iteration < max) {
                     double x_new = x*x-y*y+c_re;
                     y = 2*x*y+c_im;
